@@ -1,4 +1,4 @@
-## [TapTap.TapDB](./Documentation/README.md)
+## TapTap.TapDB
 
 ## 命名空间
 
