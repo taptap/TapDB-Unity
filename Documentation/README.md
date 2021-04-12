@@ -1,5 +1,11 @@
 ## TapTap.TapDB
 
+## 使用前提
+
+使用 TapTap.TapDB 前提是必须依赖以下库:
+* [TapTap.Bootstrap](https://github.com/TapTap/TapBootstrap-Unity.git)
+* [TapTap.Common](https://github.com/TapTap/TapCommon-Unity.git)
+
 ## 命名空间
 
 ```c#
