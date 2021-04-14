@@ -3,7 +3,6 @@
 ## 使用前提
 
 使用 TapTap.TapDB 前提是必须依赖以下库:
-* [TapTap.Bootstrap](https://github.com/TapTap/TapBootstrap-Unity.git)
 * [TapTap.Common](https://github.com/TapTap/TapCommon-Unity.git)
 
 ## 命名空间
@@ -13,6 +12,11 @@ using TapTap.TapDB;
 ```
 
 ## 接口描述
+
+### 初始化
+```c#
+TapDB.Init(string clientId, string channel, string gameVersion, bool isCN);
+```
 
 ### 设置用户
 
@@ -49,7 +53,7 @@ TapDB.OnCharge(string orderId, string productId, string amount, string currencyT
 ### 自定义事件
 
 ```c#
-TapDB.Track(string eventName,string jsonProperties);
+TapDB.TrackEvent(string eventName,string jsonProperties);
 ```
 
 ### 注册静态事件
@@ -68,6 +72,11 @@ TapDB.UnregisterStaticProperty(string propertKey);
 
 ```c#
 TapDB.ClearStaticProperties();
+```
+
+### 注册动态事件
+```c#
+TapDB.RegisterDynamicProperties(IDynamicProperties properties);
 ```
 
 ### 设备初始化
