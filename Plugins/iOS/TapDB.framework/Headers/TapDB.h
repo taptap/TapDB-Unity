@@ -22,9 +22,15 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeTwitter;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
 
 //版本号
-static NSString *const version = @"3.0.2";
+static NSString *const version = @"3.0.3";
 
 @interface TapDB : NSObject
+/**
+ Controls the access to IDFA
+ If not explicitly set, the default is YES
+ */
+@property (class, nonatomic, assign, getter=isAdvertiserIDCollectionEnabled) BOOL advertiserIDCollectionEnabled;
+
 /**
  * 是否打开日志输出
  * enbale : YES 打开 NO 关闭
