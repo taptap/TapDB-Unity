@@ -27,7 +27,7 @@ static NSString *const version = @"3.0.3";
 @interface TapDB : NSObject
 /**
  Controls the access to IDFA
- If not explicitly set, the default is YES
+ If not explicitly set, the default is NO
  */
 @property (class, nonatomic, assign, getter=isAdvertiserIDCollectionEnabled) BOOL advertiserIDCollectionEnabled;
 
