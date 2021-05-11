@@ -114,3 +114,11 @@ TapDB.UserAdd(string properties);
 ```c#
 TapDB.ClearUser();
 ```
+
+## iOS 独占方法
+
+### 开启 IDFA 
+
+```c#
+TapDB.AdvertiserIDCollectionEnabled(bool enable);
+```
