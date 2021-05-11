@@ -5,6 +5,7 @@
 ### Feature
 
 - 新增 RegisterDynamicProperties 接口
+- 新增 AdvertiserIDCollectionEnabled IDFA 获取开关
 
 ### Dependencies
 
