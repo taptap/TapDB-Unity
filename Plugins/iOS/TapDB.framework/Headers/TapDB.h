@@ -21,9 +21,6 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeGoogle;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeTwitter;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
 
-#define TapDBSDK               @"TapDB"
-#define TapDBSDK_VERSION_NUMBER @"20101006"
-#define TapDBSDK_VERSION        @"2.1.1"
 //版本号
 static NSString *const version = @"3.0.3";
 
