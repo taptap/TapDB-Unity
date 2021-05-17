@@ -47,7 +47,7 @@ TapDB.SetServer(string server);
 ### 充值成功
 
 ```c#
-TapDB.OnCharge(string orderId, string productId, string amount, string currencyType, string payment);
+TapDB.OnCharge(string orderId, string productId, long amount, string currencyType, string payment);
 ```
 
 ### 自定义事件
