@@ -21,19 +21,10 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeGoogle;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeTwitter;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
 
-#define TapDBSDK               @"TapDB"
-#define TapDBSDK_VERSION_NUMBER @"20103001"
-#define TapDBSDK_VERSION        @"2.1.3"
 //版本号
-static NSString *const TAPDB_VERSION = @"3.0.4";
+static NSString *const version = @"3.0.1";
 
 @interface TapDB : NSObject
-/**
- Controls the access to IDFA
- If not explicitly set, the default is NO
- */
-@property (class, nonatomic, assign, getter=isAdvertiserIDCollectionEnabled) BOOL advertiserIDCollectionEnabled;
-
 /**
  * 是否打开日志输出
  * enbale : YES 打开 NO 关闭
