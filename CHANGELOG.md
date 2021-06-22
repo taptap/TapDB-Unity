@@ -1,24 +1,34 @@
 # ChangeLog
 
-### 2.1.4
+## 2.1.5
+
+### New Feature
+
+- Android 新增游戏 TapTap 共享ID 开关
+
+### Dependencies
+
+- TapTap.Common v2.1.5
+
+## 2.1.4
 
 ### Dependencies
 
 - TapTap.Common v2.1.4
 
-### 2.1.3
+## 2.1.3
 
 ### Dependencies
 
 - TapTap.Common v2.1.3
 
-### 2.1.2
+## 2.1.2
 
 ### Dependencies
 
 - TapTap.Common v2.1.2
 
-### 2.1.1
+## 2.1.1
 
 ### Feature
 
@@ -29,7 +39,7 @@
 
 - TapTap.Common v2.1.1
 
-### 2.0.0
+## 2.0.0
 
 ### Dependencies
 
