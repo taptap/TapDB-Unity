@@ -1,3 +1,4 @@
+using System.IO;
 using TapTap.Common.Editor;
 using UnityEditor;
 using UnityEditor.Callbacks;
@@ -27,7 +28,9 @@ namespace TapTap.TapDB.Editor
             proj.AddFrameworkToProject(unityFrameworkTarget, "Security.framework", false);
             proj.AddFrameworkToProject(unityFrameworkTarget, "SystemConfiguration.framework", false);
             proj.AddFrameworkToProject(unityFrameworkTarget, "AppTrackingTransparency.framework", true);
-            
+            proj.AddFrameworkToProject(unityFrameworkTarget, "iAd.framework", false);
+            proj.AddFrameworkToProject(unityFrameworkTarget, "AdServices.framework", true);
+            File.WriteAllText(projPath, proj.WriteToString());
         }
     }
 }
