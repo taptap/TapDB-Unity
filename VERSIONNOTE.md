@@ -1,3 +1,3 @@
 ### Dependencies
 
-- TapTap.Common v3.0.0
+- TapTap.Common v3.1.0
