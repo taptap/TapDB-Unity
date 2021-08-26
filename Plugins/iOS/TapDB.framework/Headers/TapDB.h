@@ -25,7 +25,7 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
 #define TapDBSDK_VERSION_NUMBER @"30100001"
 #define TapDBSDK_VERSION        @"3.1.0"
 //版本号
-static NSString *const TAPDB_VERSION = @"3.0.6";
+static NSString *const TAPDB_VERSION = @"3.0.8";
 
 @interface TapDB : NSObject
 /**
