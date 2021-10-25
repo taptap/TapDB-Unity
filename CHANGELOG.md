@@ -1,6 +1,16 @@
 # ChangeLog
 
-## 3.3.0
+## 3.3.1
+
+### Optimization and fixed bugs
+
+- 修复 TapDB 上报地址错误
+
+### Dependencies
+
+- TapTap.Common v3.3.1
+
+## 3.3.0 (废弃)
 
 ### Dependencies
 
