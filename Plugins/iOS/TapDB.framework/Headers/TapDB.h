@@ -20,12 +20,11 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeFacebook;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeGoogle;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeTwitter;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
-
 #define TapDBSDK               @"TapDB"
-#define TapDBSDK_VERSION_NUMBER @"31602001"
-#define TapDBSDK_VERSION        @"3.16.2"
+#define TapDBSDK_VERSION_NUMBER @"32803001"
+#define TapDBSDK_VERSION        @"3.28.3"
 //版本号
-static NSString *const TAPDB_VERSION = @"3.0.10";
+static NSString *const TAPDB_VERSION = TapDBSDK_VERSION;
 
 typedef NS_ENUM(NSInteger, TapDBRegion)
 {
@@ -200,6 +199,15 @@ typedef NS_ENUM(NSInteger, TapDBRegion)
 /// 添加动态事件属性，每次发送事件会调用dynamicPropertiesCaculator
 /// @param dynamicPropertiesCaculator 动态属性回调，需返回希望上传的属性字典
 + (void)registerDynamicProperties:(NSDictionary* (^)(void))dynamicPropertiesCaculator;
+
+/// 是否在 TapDB 使用 Themis
++ (void)enableThemis:(bool) enable;
+
+/// 获取 CAID（回调可能不在主线程）
++ (void)requestCAIDWithCompletionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
+
+/// 获取 CAID 归因结果（回调可能不在主线程）
++ (void)requestCAIDAttributionWithCompletionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
 
 @end
 
